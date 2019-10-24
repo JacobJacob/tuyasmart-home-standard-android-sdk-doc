@@ -1,0 +1,1663 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>标准设备控制 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Device_standard.html" />
+    
+    
+    <link rel="prev" href="Device.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Overview.html">
+            
+                <a href="Overview.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    集成准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="User.html">
+            
+                <a href="User.html">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="User_sdk_update.html">
+            
+                <a href="User_sdk_update.html">
+            
+                    
+                    SDK账户升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="User_mobile.html">
+            
+                <a href="User_mobile.html">
+            
+                    
+                    手机帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="User_email.html">
+            
+                <a href="User_email.html">
+            
+                    
+                    邮箱帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="User_uid.html">
+            
+                <a href="User_uid.html">
+            
+                    
+                    用户uid登陆体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="User_ThirdLogin.html">
+            
+                <a href="User_ThirdLogin.html">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="User_Loginout.html">
+            
+                <a href="User_Loginout.html">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="User_Loginout.html">
+            
+                <a href="User_Loginout.html#退出登录接口">
+            
+                    
+                    登出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="User_Loginout.html">
+            
+                <a href="User_Loginout.html#停用账户">
+            
+                    
+                    停用帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="User_model.html">
+            
+                <a href="User_model.html">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="User_Session.html">
+            
+                <a href="User_Session.html">
+            
+                    
+                    session失效监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="HomeManager.html">
+            
+                <a href="HomeManager.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="HomeManager.html">
+            
+                <a href="HomeManager.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="HomeOption.html">
+            
+                <a href="HomeOption.html">
+            
+                    
+                    家庭操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="HomeMember.html">
+            
+                <a href="HomeMember.html">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Room.html">
+            
+                <a href="Room.html">
+            
+                    
+                    家庭房间管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Activator_wifi.html">
+            
+                <a href="Activator_wifi.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Activator_wifi.html">
+            
+                <a href="Activator_wifi.html#ez模式配网">
+            
+                    
+                    快连(EZ)模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Activator_wifi.html">
+            
+                <a href="Activator_wifi.html#ap模式配网">
+            
+                    
+                    热点(AP)模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Activator_Zigbee.html">
+            
+                <a href="Activator_Zigbee.html">
+            
+                    
+                    ZigBee网关配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Activator_ZigbeeSub.html">
+            
+                <a href="Activator_ZigbeeSub.html">
+            
+                    
+                    ZigBee子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Device.html">
+            
+                <a href="Device.html">
+            
+                    
+                    自定义设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="Device_standard.html">
+            
+                <a href="Device_standard.html">
+            
+                    
+                    标准设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="Device_standard.html">
+            
+                <a href="Device_standard.html#设备功能集">
+            
+                    
+                    标准设备功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="Device_standard.html">
+            
+                <a href="Device_standard.html#设备操作控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Device.html">
+            
+                <a href="Device.html">
+            
+                    
+                    自定义设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="Device.html">
+            
+                <a href="Device.html#设备功能点">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="Device.html">
+            
+                <a href="Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#设备重命名">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#查询wifi信号强度">
+            
+                    
+                    查询WiFi信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#devicebean数据模型">
+            
+                    
+                    DeviceBean数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="OTA.html">
+            
+                <a href="OTA.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="Gateway.html">
+            
+                <a href="Gateway.html">
+            
+                    
+                    网关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Shared.html">
+            
+                <a href="Shared.html">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Shared_Device_add.html">
+            
+                <a href="Shared_Device_add.html">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="Shared_Device_Remove.html">
+            
+                <a href="Shared_Device_Remove.html">
+            
+                    
+                    移除分享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Shared_Device_Rename.html">
+            
+                <a href="Shared_Device_Rename.html">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Timer.html">
+            
+                <a href="Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Group.html">
+            
+                <a href="Group.html">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Group_wifi.html">
+            
+                <a href="Group_wifi.html">
+            
+                    
+                    Wifi群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Group_zigbee.html">
+            
+                <a href="Group_zigbee.html">
+            
+                    
+                    Zigbee群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Group_control.html">
+            
+                <a href="Group_control.html">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="SmartScene_Manager.html">
+            
+                <a href="SmartScene_Manager.html">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="SmartScene_Manager.html">
+            
+                <a href="SmartScene_Manager.html#智能">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="SmartScene_Manager.html">
+            
+                <a href="SmartScene_Manager.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Device_Data_Channel.html">
+            
+                <a href="Device_Data_Channel.html">
+            
+                    
+                    设备数据流通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Message.html">
+            
+                <a href="Message.html">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="Message.html">
+            
+                <a href="Message.html">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="MessagePush.html">
+            
+                <a href="MessagePush.html">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Feedback.html">
+            
+                <a href="Feedback.html">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="CommonInterface.html">
+            
+                <a href="CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Push.html">
+            
+                <a href="Push.html">
+            
+                    
+                    集成Push
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="Push_umeng.html">
+            
+                <a href="Push_umeng.html">
+            
+                    
+                    友盟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="Push_fcm.html">
+            
+                <a href="Push_fcm.html">
+            
+                    
+                    Firebase Cloud Messaging (FCM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Gateway.html">
+            
+                <a href="Gateway.html">
+            
+                    
+                    网关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Mesh.html">
+            
+                <a href="Mesh.html">
+            
+                    
+                    蓝牙Mesh(涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="Mesh_Prepare.html">
+            
+                <a href="Mesh_Prepare.html">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="Mesh_IDEA.html">
+            
+                <a href="Mesh_IDEA.html">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="Mesh_Admin.html">
+            
+                <a href="Mesh_Admin.html">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="Mesh_Config.html">
+            
+                <a href="Mesh_Config.html">
+            
+                    
+                    配网与入网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="Mesh_Device.html">
+            
+                <a href="Mesh_Device.html">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="Mesh_Group_Operate.html">
+            
+                <a href="Mesh_Group_Operate.html">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="Mesh_Device_Operate.html">
+            
+                <a href="Mesh_Device_Operate.html">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8" data-path="Mesh_OTA.html">
+            
+                <a href="Mesh_OTA.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Mesh.html">
+            
+                <a href="Mesh.html">
+            
+                    
+                    蓝牙Mesh(SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="SigMesh_Prepare.html">
+            
+                <a href="SigMesh_Prepare.html">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="SigMesh_IDEA.html">
+            
+                <a href="SigMesh_IDEA.html">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="SigMesh_Admin.html">
+            
+                <a href="SigMesh_Admin.html">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="SigMesh_Config.html">
+            
+                <a href="SigMesh_Config.html">
+            
+                    
+                    配网与入网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.5" data-path="SigMesh_Device.html">
+            
+                <a href="SigMesh_Device.html">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.6" data-path="SigMesh_Group_Operate.html">
+            
+                <a href="SigMesh_Group_Operate.html">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.7" data-path="SigMesh_Device_Operate.html">
+            
+                <a href="SigMesh_Device_Operate.html">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.8" data-path="SigMesh_OTA.html">
+            
+                <a href="SigMesh_OTA.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Update_Log.html">
+            
+                <a href="Update_Log.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >标准设备控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x83B7;&#x53D6;"><a name="&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x83B7;&#x53D6;" class="plugin-anchor" href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x83B7;&#x53D6;</h3>
+<h5 id="&#x3010;&#x63CF;&#x8FF0;&#x3011;"><a name="&#x3010;&#x63CF;&#x8FF0;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x63CF;&#x8FF0;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x63CF;&#x8FF0;&#x3011;</h5>
+<p>&#x6D82;&#x9E26;&#x667A;&#x80FD;&#x63D0;&#x4F9B;&#x4E86;&#x4E30;&#x5BCC;&#x7684;&#x63A5;&#x53E3;&#x4F9B;&#x5F00;&#x53D1;&#x8005;&#x5B9E;&#x73B0;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x7684;&#x83B7;&#x53D6;&#x548C;&#x7BA1;&#x7406;&#x80FD;&#x529B;(&#x79FB;&#x9664;&#x7B49;)&#x3002;&#x8BBE;&#x5907;&#x76F8;&#x5173;&#x7684;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x90FD;&#x91C7;&#x7528;&#x5F02;&#x6B65;&#x6D88;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#x901A;&#x77E5;&#x63A5;&#x53D7;&#x8005;&#x3002;</p>
+<h5 id="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><a name="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;</h5>
+<ul>
+<li>&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x5FC5;&#x987B;&#x5148;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x5373;&#x5148;&#x8C03;&#x7528;TuyaHomeSdk.newHomeInstance(homeId).getHomeDetail(ITuyaHomeResultCallback callback)</li>
+<li>&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7ECF;&#x7EAC;&#x5EA6;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x914D;&#x7F51;&#x524D;&#x8C03;&#x7528;TuyaSdk.setLatAndLong&#xFF0C;&#x5176;&#x4E2D;lon&#x3001;lat&#x7528;&#x6765;&#x6807;&#x793A;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<h3 id="&#x6807;&#x51C6;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x96C6;"><a name="&#x6807;&#x51C6;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x96C6;" class="plugin-anchor" href="#&#x6807;&#x51C6;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6807;&#x51C6;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x96C6;</h3>
+<p>&#x5177;&#x4F53;&#x54C1;&#x7C7B;&#x7684;&#x8BBE;&#x5907;&#x6807;&#x51C6;dpCode &#x529F;&#x80FD;&#x96C6;&#x53EF;&#x4EE5;&#x53C2;&#x7167;&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<h3 id="&#x8BBE;&#x5907;&#x64CD;&#x4F5C;&#x63A7;&#x5236;"><a name="&#x8BBE;&#x5907;&#x64CD;&#x4F5C;&#x63A7;&#x5236;" class="plugin-anchor" href="#&#x8BBE;&#x5907;&#x64CD;&#x4F5C;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x5907;&#x64CD;&#x4F5C;&#x63A7;&#x5236;</h3>
+<p>ITuyaDevice&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x901A;&#x77E5;&#x80FD;&#x529B;&#xFF0C;&#x901A;&#x8FC7;&#x6CE8;&#x518C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x6570;&#x636E;&#x63A5;&#x53D7;&#x3001;&#x8BBE;&#x5907;&#x79FB;&#x9664;&#x3001;&#x8BBE;&#x5907;&#x4E0A;&#x4E0B;&#x7EBF;&#x3001;&#x624B;&#x673A;&#x7F51;&#x7EDC;&#x53D8;&#x5316;&#x7684;&#x901A;&#x77E5;&#x3002;&#x540C;&#x65F6;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x6307;&#x4EE4;&#x4E0B;&#x53D1;&#xFF0C;&#x8BBE;&#x5907;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x7684;&#x63A5;&#x53E3;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x6839;&#x636E;&#x8BBE;&#x5907;id&#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x7C7B;</span>
+ITuyaDevice mDevice <span class="token operator">=</span> TuyaHomeSdk<span class="token punctuation">.</span><span class="token function">newDeviceInstance</span><span class="token punctuation">(</span>deviceBean<span class="token punctuation">.</span><span class="token function">getDevId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x3011;"><a name="&#x3010;&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x6307;&#x4EE4;&#x683C;&#x5F0F;&#x3011;</h5>
+<p>&#x53D1;&#x9001;&#x63A7;&#x5236;&#x6307;&#x4EE4;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java">Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> dps
+
+<span class="token comment">// dps.put(&quot;dpCode&quot;,&quot;dpValue&quot;);</span>
+dpCode<span class="token operator">:</span> &#x6807;&#x51C6;&#x6307;&#x4EE4;Code
+dpValue<span class="token operator">:</span> dpValue
+</code></pre>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x4F5C;&#x7528;:&#x5F00;&#x5173;&#x6253;&#x5F00; </span>
+dps<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;switch_led&quot;</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x5B57;&#x7B26;&#x4E32;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B; &#x4F5C;&#x7528;:&#x8BBE;&#x7F6E;&#x5F69;&#x5149;&#x989C;&#x8272;</span>
+dps<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;colour_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;009003e803e8&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x679A;&#x4E3E;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B; &#x4F5C;&#x7528;:&#x8BBE;&#x7F6E;&#x6A21;&#x5F0F;&#x4E3A;&quot;white&quot;&#x767D;&#x5149;&#x6A21;&#x5F0F;</span>
+dps<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;work_mode&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;white&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x8BBE;&#x7F6E;&#x6570;&#x503C;&#x578B;&#x529F;&#x80FD;&#x70B9;&#x793A;&#x4F8B; &#x7528;:&#x8BBE;&#x7F6E;&#x4EAE;&#x5EA6;&#x4E3A;100</span>
+dps<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;bright_value&quot;</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">//&#x591A;&#x4E2A;&#x529F;&#x80FD;&#x5408;&#x5E76;&#x53D1;&#x9001;</span>
+dps<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;work_mode&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;colour&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+dps<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;colour_data&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;009003e803e8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+mDevice<span class="token punctuation">.</span><span class="token function">publishCommands</span><span class="token punctuation">(</span>dps<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">IResultCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span>String code<span class="token punctuation">,</span> String error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x9519;&#x8BEF;&#x7801;11001</span>
+        <span class="token comment">//&#x6709;&#x4E0B;&#x9762;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</span>
+        <span class="token comment">//1&#x3001;&#x7C7B;&#x578B;&#x4E0D;&#x5BF9;&#x5BFC;&#x81F4;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;string&#x7C7B;&#x578B;&#x683C;&#x5F0F;&#xFF0C;&#x53D1;&#x6210;boolean&#x7C7B;&#x578B;&#x6570;&#x636E;&#x3002;</span>
+        <span class="token comment">//2&#x3001;&#x53EA;&#x8BFB;&#x7C7B;&#x578B;dp&#x6570;&#x636E;&#x4E0D;&#x80FD;&#x4E0B;&#x53D1;&#xFF0C;&#x53C2;&#x8003;SchemaBean getMode &quot;ro&quot;&#x662F;&#x53EA;&#x8BFB;&#x7C7B;&#x578B;&#x3002;</span>
+        <span class="token comment">//3&#x3001;raw&#x683C;&#x5F0F;&#x53D1;&#x9001;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x4E0D;&#x662F;16&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+        <span class="token punctuation">}</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><a name="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;</h5>
+<ul>
+<li>&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x7684;&#x53D1;&#x9001;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x6570;&#x636E;&#x7C7B;&#x578B;.
+  &#x6BD4;&#x5982;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x6570;&#x503C;&#x578B;&#xFF08;value&#xFF09;&#xFF0C;&#x90A3;&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x53D1;&#x9001;&#x7684;&#x5E94;&#x8BE5;&#x662F; <code>{&quot;bright_value&quot;: 25}</code>  &#x800C;&#x4E0D;&#x662F;  <code>{&quot;bright_value&quot;: &quot;25&quot;}</code></li>
+<li>&#x900F;&#x4F20;&#x7C7B;&#x578B;&#x4F20;&#x8F93;&#x7684;byte&#x6570;&#x7EC4;&#x662F;16&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x662F;&#x5076;&#x6570;&#x4F4D;&#x3002;
+  &#x6BD4;&#x5982;&#x6B63;&#x786E;&#x7684;&#x683C;&#x5F0F;&#x662F;: <code>{&quot;*code&quot;: &quot;0110&quot;}</code> &#x800C;&#x4E0D;&#x662F; <code>{&quot;*code&quot;: &quot;110&quot;}</code></li>
+</ul>
+<h4 id="&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x76D1;&#x542C;"><a name="&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x76D1;&#x542C;" class="plugin-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x76D1;&#x542C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x76D1;&#x542C;</h4>
+<h5 id="&#x3010;&#x63CF;&#x8FF0;&#x3011;"><a name="&#x3010;&#x63CF;&#x8FF0;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x63CF;&#x8FF0;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x63CF;&#x8FF0;&#x3011;</h5>
+<p>TuyaHomeDevice&#x63D0;&#x4F9B;&#x8BBE;&#x5907;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF08;dp&#x6570;&#x636E;&#x3001;&#x8BBE;&#x5907;&#x540D;&#x79F0;&#x3001;&#x8BBE;&#x5907;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x548C;&#x8BBE;&#x5907;&#x79FB;&#x9664;&#xFF09;&#x7684;&#x76D1;&#x542C;&#xFF0C;&#x4F1A;&#x5B9E;&#x65F6;&#x540C;&#x6B65;&#x5230;&#x8FD9;&#x91CC;&#x3002;</p>
+<h5 id="&#x3010;&#x5B9E;&#x73B0;&#x56DE;&#x8C03;&#x3011;"><a name="&#x3010;&#x5B9E;&#x73B0;&#x56DE;&#x8C03;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x5B9E;&#x73B0;&#x56DE;&#x8C03;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x5B9E;&#x73B0;&#x56DE;&#x8C03;&#x3011;</h5>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">registerDeviceListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">IDevListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDpUpdate</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span> String dpStr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//dp&#x6570;&#x636E;&#x66F4;&#x65B0;:devId &#x548C;&#x76F8;&#x5E94;dp&#x6570;&#x636E;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onRemoved</span><span class="token punctuation">(</span>String devId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//&#x8BBE;&#x5907;&#x88AB;&#x79FB;&#x9664;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStatusChanged</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> online<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//&#x8BBE;&#x5907;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#xFF0C;online</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onNetworkStatusChanged</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x76D1;&#x542C;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDevInfoUpdate</span><span class="token punctuation">(</span>String devId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x53D8;&#x66F4;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x8BBE;&#x5907;&#x540D;&#x79F0;&#x53D8;&#x5316;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x8BE5;&#x63A5;&#x53E3;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="&#x6570;&#x636E;&#x4E0B;&#x53D1;"><a name="&#x6570;&#x636E;&#x4E0B;&#x53D1;" class="plugin-anchor" href="#&#x6570;&#x636E;&#x4E0B;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x4E0B;&#x53D1;</h4>
+<h5 id="&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><a name="&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;" class="plugin-anchor" href="#&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;</h5>
+<p>&#x4EE5;&#x706F;&#x7C7B;&#x4EA7;&#x54C1;&#x4F5C;&#x4E3A;&#x793A;&#x4F8B;</p>
+<p>1&#x3001;&#x5B9A;&#x4E49;&#x706F;&#x5F00;&#x5173;dp&#x70B9;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> String SWITCH_LED <span class="token operator">=</span> <span class="token string">&quot;switch_led&quot;</span><span class="token punctuation">;</span> <span class="token comment">//&#x706F;&#x5F00;&#x5173;</span>
+</code></pre>
+<p>2&#x3001;&#x5BF9;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/**
+ * &#x8BBE;&#x5907;&#x5BF9;&#x8C61;&#x3002;&#x8BE5;&#x8BBE;&#x5907;&#x7684;&#x6240;&#x6709;dp&#x53D8;&#x5316;&#x90FD;&#x4F1A;&#x901A;&#x8FC7;callback&#x8FD4;&#x56DE;&#x3002;
+ *
+ * &#x521D;&#x59CB;&#x5316;&#x8BBE;&#x5907;&#x4E4B;&#x524D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x5DF2;&#x7ECF;&#x521D;&#x59CB;&#x5316;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x8FD4;&#x56DE;&#x4FE1;&#x606F;&#x3002;
+ */</span>
+mDevice <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TuyaHomeSdk<span class="token punctuation">.</span>newDeviceInstance</span><span class="token punctuation">(</span>mDevId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+mDevice<span class="token punctuation">.</span><span class="token function">registerDeviceListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">IDevListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDpUpdate</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span> String dpStr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//dp&#x6570;&#x636E;&#x66F4;&#x65B0;:devId &#x548C;&#x76F8;&#x5E94;dp&#x6570;&#x636E;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onRemoved</span><span class="token punctuation">(</span>String devId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x8BBE;&#x5907;&#x88AB;&#x79FB;&#x9664;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStatusChanged</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> online<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x8BBE;&#x5907;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#xFF0C;online</span>
+        <span class="token comment">//&#x8FD9;&#x4E2A;statusChange&#x662F;&#x6307;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x548C;&#x4E91;&#x7AEF;&#x901A;&#x4FE1;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x3002;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onNetworkStatusChanged</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x76D1;&#x542C;</span>
+        <span class="token comment">//&#x8FD9;&#x4E2A;onNetworkStatusChanged&#x662F;&#x6307;&#x624B;&#x673A;&#x548C;&#x4E91;&#x7AEF;&#x901A;&#x4FE1;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x3002;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onDevInfoUpdate</span><span class="token punctuation">(</span>String devId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x53D8;&#x66F4;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x8BBE;&#x5907;&#x540D;&#x79F0;&#x53D8;&#x5316;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x8BE5;&#x63A5;&#x53E3;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>4&#x3001;&#x5F00;&#x706F;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;</p>
+<pre class="language-"><code class="lang-java"> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">openLamp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    HashMap<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> hashMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    hashMap<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>SWITCH_LED<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    mDevice<span class="token punctuation">.</span><span class="token function">publishCommands</span><span class="token punctuation">(</span>hashMap<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">IControlCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span>String code<span class="token punctuation">,</span> String error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            Toast<span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span>mContext<span class="token punctuation">,</span> <span class="token string">&quot;&#x5F00;&#x706F;&#x5931;&#x8D25;&quot;</span><span class="token punctuation">,</span> Toast<span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            Toast<span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span>mContext<span class="token punctuation">,</span> <span class="token string">&quot;&#x5F00;&#x706F;&#x6210;&#x529F;&quot;</span><span class="token punctuation">,</span> Toast<span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>5&#x3001;&#x6CE8;&#x9500;&#x8BBE;&#x5907;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;</p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">unRegisterDevListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>6&#x3001;&#x8BBE;&#x5907;&#x8D44;&#x6E90;&#x9500;&#x6BC1;</p>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><a name="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;</h5>
+<ul>
+<li>&#x6307;&#x4EE4;&#x4E0B;&#x53D1;&#x6210;&#x529F;&#x5E76;&#x4E0D;&#x662F;&#x6307;&#x8BBE;&#x5907;&#x771F;&#x6B63;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#xFF0C;&#x53EA;&#x662F;&#x610F;&#x5473;&#x7740;&#x6307;&#x4EE4;&#x6210;&#x529F;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x3002;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x4F1A;&#x6709;dp&#x6570;&#x636E;&#x4FE1;&#x606F;&#x4E0A;&#x62A5;&#x4E0A;&#x6765; &#xFF0C;&#x4E14;&#x901A;&#x8FC7;<code>IDevListener onDpUpdate</code>&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>command &#x662F;&#x4EE5;<code>Map<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span> <span class="token attr-name">dpCode,Object</span> <span class="token attr-name">dpValue</span><span class="token punctuation">&gt;</span></span></code> &#x6570;&#x636E;&#x683C;&#x5F0F;&#x3002;</li>
+<li>command &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x53D1;&#x9001;&#x591A;&#x4E2A;dp&#x6570;&#x636E;&#x3002;</li>
+</ul>
+<h4 id="&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;"><a name="&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;" class="plugin-anchor" href="#&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;</h4>
+<h5 id="1-&#x5E38;&#x89C4;&#x67E5;&#x8BE2;dp&#x6570;&#x636E;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;-devicebean&#x91CC;&#x9762;-getdpcodes&#x53BB;&#x83B7;&#x53D6;&#x3002;"><a name="1-&#x5E38;&#x89C4;&#x67E5;&#x8BE2;dp&#x6570;&#x636E;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;-devicebean&#x91CC;&#x9762;-getdpcodes&#x53BB;&#x83B7;&#x53D6;&#x3002;" class="plugin-anchor" href="#1-&#x5E38;&#x89C4;&#x67E5;&#x8BE2;dp&#x6570;&#x636E;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;-devicebean&#x91CC;&#x9762;-getdpcodes&#x53BB;&#x83B7;&#x53D6;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5E38;&#x89C4;&#x67E5;&#x8BE2;dp&#x6570;&#x636E;&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; DeviceBean&#x91CC;&#x9762; getDpCodes()&#x53BB;&#x83B7;&#x53D6;&#x3002;</h5>
+<h5 id="2-&#x67E5;&#x8BE2;&#x5355;&#x4E2A;dp&#x6570;&#x636E;-&#x4ECE;&#x8BBE;&#x5907;&#x4E0A;&#x67E5;&#x8BE2;dp&#x6700;&#x65B0;&#x6570;&#x636E;-&#x4F1A;&#x7ECF;&#x8FC7;-idevicepanelcallback-ondpupdate-&#x63A5;&#x53E3;&#x56DE;&#x8C03;&#x3002;"><a name="2-&#x67E5;&#x8BE2;&#x5355;&#x4E2A;dp&#x6570;&#x636E;-&#x4ECE;&#x8BBE;&#x5907;&#x4E0A;&#x67E5;&#x8BE2;dp&#x6700;&#x65B0;&#x6570;&#x636E;-&#x4F1A;&#x7ECF;&#x8FC7;-idevicepanelcallback-ondpupdate-&#x63A5;&#x53E3;&#x56DE;&#x8C03;&#x3002;" class="plugin-anchor" href="#2-&#x67E5;&#x8BE2;&#x5355;&#x4E2A;dp&#x6570;&#x636E;-&#x4ECE;&#x8BBE;&#x5907;&#x4E0A;&#x67E5;&#x8BE2;dp&#x6700;&#x65B0;&#x6570;&#x636E;-&#x4F1A;&#x7ECF;&#x8FC7;-idevicepanelcallback-ondpupdate-&#x63A5;&#x53E3;&#x56DE;&#x8C03;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x67E5;&#x8BE2;&#x5355;&#x4E2A;dp&#x6570;&#x636E; &#x4ECE;&#x8BBE;&#x5907;&#x4E0A;&#x67E5;&#x8BE2;dp&#x6700;&#x65B0;&#x6570;&#x636E; &#x4F1A;&#x7ECF;&#x8FC7; IDevicePanelCallback onDpUpdate &#x63A5;&#x53E3;&#x56DE;&#x8C03;&#x3002;</h5>
+<h5 id="&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;"><a name="&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;</h5>
+<pre class="language-"><code class="lang-java">mDevice<span class="token punctuation">.</span><span class="token function">getDp</span><span class="token punctuation">(</span>String dpId<span class="token punctuation">,</span> IResultCallback callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><a name="&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;</h5>
+<pre class="language-"><code class="lang-java"><span class="token number">1</span>&#x3001;&#x901A;&#x8FC7;&#x8C03;&#x7528;mTuyaDevice<span class="token punctuation">.</span>getDp&#x65B9;&#x6CD5;&#x3002;
+
+<span class="token number">2</span>&#x3001;&#x6570;&#x636E;&#x4F1A;&#x901A;&#x8FC7;dp&#x6570;&#x636E;&#x66F4;&#x65B0;&#x76D1;&#x542C;&#x4E0A;&#x62A5;&#x4E0A;&#x6765;&#x3002;
+IDevListener<span class="token punctuation">.</span><span class="token function">onDpUpdate</span><span class="token punctuation">(</span>String devId<span class="token punctuation">,</span>String dpStr<span class="token punctuation">)</span>
+</code></pre>
+<h5 id="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><a name="&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x3011;</h5>
+<ul>
+<li>&#x8BE5;&#x63A5;&#x53E3;&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x90A3;&#x4E9B;&#x6570;&#x636E;&#x4E0D;&#x4E3B;&#x52A8;&#x53BB;&#x4E0A;&#x62A5;&#x7684;dp&#x70B9;&#x3002;</li>
+</ul>
+<h4 id="devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;"><a name="devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;" class="plugin-anchor" href="#devicebean-&#x6570;&#x636E;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>DeviceBean &#x6570;&#x636E;&#x6A21;&#x578B;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B57;&#x6BB5;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">iconUrl</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x56FE;&#x6807;&#x5730;&#x5740;</td>
+</tr>
+<tr>
+<td style="text-align:center">isOnline</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x662F;&#x5426;&#x5728;&#x7EBF;&#xFF08;&#x5C40;&#x57DF;&#x7F51;&#x6216;&#x8005;&#x4E91;&#x7AEF;&#x5728;&#x7EBF;&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td style="text-align:center">schema</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x63A7;&#x5236;&#x6570;&#x636E;&#x70B9;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:center">productId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x4EA7;&#x54C1;ID&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;ID&#xFF0C;Schema&#x4FE1;&#x606F;&#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td style="text-align:center">supportGroup</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x662F;&#x5426;&#x652F;&#x6301;&#x7FA4;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x652F;&#x6301;&#x8BF7;&#x5230;&#x5F00;&#x653E;&#x5E73;&#x53F0;&#x5F00;&#x542F;&#x6B64;&#x9879;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td style="text-align:center">time</td>
+<td style="text-align:center">Long</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x6FC0;&#x6D3B;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td style="text-align:center">pv</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x7F51;&#x5173;&#x534F;&#x8BAE;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td style="text-align:center">bv</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x7F51;&#x5173;&#x901A;&#x7528;&#x56FA;&#x4EF6;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td style="text-align:center">schemaMap</td>
+<td style="text-align:center">Map</td>
+<td style="text-align:center">Schema&#x7F13;&#x5B58;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td style="text-align:center">dpCodes</td>
+<td style="text-align:center">Map</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x5F53;&#x524D;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x3002;key &#x662F;&#x6807;&#x51C6;decode &#xFF0C;value &#x662F;&#x5177;&#x4F53;&#x6570;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:center">dps</td>
+<td style="text-align:center">Map</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x5F53;&#x524D;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x3002;key &#x662F; dpId &#xFF0C;value &#x662F;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:center">isShare</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x662F;&#x5206;&#x4EAB;&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td style="text-align:center">virtual</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x662F;&#x865A;&#x62DF;&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td style="text-align:center">lon&#x3001;lat</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x7528;&#x6765;&#x6807;&#x793A;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x4F7F;&#x7528;sdk&#x524D;&#xFF0C;&#x8C03;&#x7528;TuyaSdk.setLatAndLong &#x8BBE;&#x7F6E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td style="text-align:center">isLocalOnline</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x5C40;&#x57DF;&#x7F51;&#x5728;&#x7EBF;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td style="text-align:center">nodeId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x7528;&#x4E8E;&#x7F51;&#x5173;&#x548C;&#x5B50;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5C5E;&#x4E8E;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6807;&#x8BC6;&#x5176;&#x77ED;&#x5730;&#x5740;ID&#xFF0C;&#x4E00;&#x4E2A;&#x7F51;&#x5173;&#x4E0B;&#x9762;&#x7684;nodeId&#x90FD;&#x552F;&#x4E00;&#x7684;</td>
+</tr>
+<tr>
+<td style="text-align:center">timezoneId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x65F6;&#x533A;</td>
+</tr>
+<tr>
+<td style="text-align:center">category</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td style="text-align:center">meshId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x7528;&#x4E8E;&#x7F51;&#x5173;&#x548C;&#x5B50;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5C5E;&#x4E8E;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6807;&#x8BC6;&#x5176;&#x7F51;&#x5173;ID</td>
+</tr>
+<tr>
+<td style="text-align:center">devId</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">&#x8BBE;&#x5907;&#x552F;&#x4E00;&#x6807;&#x793A;id</td>
+</tr>
+<tr>
+<td style="text-align:center">isZigBeeWifi</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">&#x662F;&#x5426;&#x662F;ZigBee&#x7F51;&#x5173;&#x8BBE;&#x5907;</td>
+</tr>
+<tr>
+<td style="text-align:center">hasZigBee</td>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">hasZigBee</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Device.html" class="navigation navigation-prev " aria-label="Previous page: 自定义设备控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Device_standard.html#设备功能集" class="navigation navigation-next " aria-label="Next page: 标准设备功能集">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"标准设备控制","level":"1.8.1","depth":2,"next":{"title":"标准设备功能集","level":"1.8.1.1","depth":3,"anchor":"#设备功能集","path":"resource/Device_standard.md","ref":"./resource/Device_standard.md#设备功能集","articles":[]},"previous":{"title":"自定义设备控制","level":"1.8","depth":1,"path":"resource/Device.md","ref":"./resource/Device.md","articles":[{"title":"标准设备控制","level":"1.8.1","depth":2,"path":"resource/Device_standard.md","ref":"./resource/Device_standard.md","articles":[{"title":"标准设备功能集","level":"1.8.1.1","depth":3,"anchor":"#设备功能集","path":"resource/Device_standard.md","ref":"./resource/Device_standard.md#设备功能集","articles":[]},{"title":"设备控制","level":"1.8.1.2","depth":3,"anchor":"#设备操作控制","path":"resource/Device_standard.md","ref":"./resource/Device_standard.md#设备操作控制","articles":[]}]},{"title":"自定义设备控制","level":"1.8.2","depth":2,"path":"resource/Device.md","ref":"./resource/Device.md","articles":[{"title":"设备功能点","level":"1.8.2.1","depth":3,"anchor":"#设备功能点","path":"resource/Device.md","ref":"./resource/Device.md#设备功能点","articles":[]},{"title":"设备控制","level":"1.8.2.2","depth":3,"anchor":"#设备控制","path":"resource/Device.md","ref":"./resource/Device.md#设备控制","articles":[]}]},{"title":"修改设备名称","level":"1.8.3","depth":2,"anchor":"#设备重命名","path":"resource/Device_modify.md","ref":"./resource/Device_modify.md#设备重命名","articles":[]},{"title":"移除设备","level":"1.8.4","depth":2,"anchor":"#移除设备","path":"resource/Device_modify.md","ref":"./resource/Device_modify.md#移除设备","articles":[]},{"title":"查询WiFi信号强度","level":"1.8.5","depth":2,"anchor":"#查询wifi信号强度","path":"resource/Device_modify.md","ref":"./resource/Device_modify.md#查询wifi信号强度","articles":[]},{"title":"DeviceBean数据模型","level":"1.8.6","depth":2,"anchor":"#devicebean数据模型","path":"resource/Device_modify.md","ref":"./resource/Device_modify.md#devicebean数据模型","articles":[]},{"title":"固件升级","level":"1.8.7","depth":2,"path":"resource/OTA.md","ref":"./resource/OTA.md","articles":[]},{"title":"网关","level":"1.8.8","depth":2,"path":"resource/Gateway.md","ref":"./resource/Gateway.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/Device_standard.md","mtime":"2019-10-24T06:49:26.190Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-24T06:57:54.122Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

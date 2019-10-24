@@ -1,0 +1,1520 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>配网与入网 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Mesh_Device.html" />
+    
+    
+    <link rel="prev" href="Mesh_Admin.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Overview.html">
+            
+                <a href="Overview.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    集成准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="User.html">
+            
+                <a href="User.html">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="User_sdk_update.html">
+            
+                <a href="User_sdk_update.html">
+            
+                    
+                    SDK账户升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="User_mobile.html">
+            
+                <a href="User_mobile.html">
+            
+                    
+                    手机帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="User_email.html">
+            
+                <a href="User_email.html">
+            
+                    
+                    邮箱帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="User_uid.html">
+            
+                <a href="User_uid.html">
+            
+                    
+                    用户uid登陆体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="User_ThirdLogin.html">
+            
+                <a href="User_ThirdLogin.html">
+            
+                    
+                    第三方登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="User_Loginout.html">
+            
+                <a href="User_Loginout.html">
+            
+                    
+                    修改用户信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="User_Loginout.html">
+            
+                <a href="User_Loginout.html#退出登录接口">
+            
+                    
+                    登出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="User_Loginout.html">
+            
+                <a href="User_Loginout.html#停用账户">
+            
+                    
+                    停用帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="User_model.html">
+            
+                <a href="User_model.html">
+            
+                    
+                    用户数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="User_Session.html">
+            
+                <a href="User_Session.html">
+            
+                    
+                    session失效监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="HomeManager.html">
+            
+                <a href="HomeManager.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="HomeManager.html">
+            
+                <a href="HomeManager.html">
+            
+                    
+                    家庭管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="HomeOption.html">
+            
+                <a href="HomeOption.html">
+            
+                    
+                    家庭操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="HomeMember.html">
+            
+                <a href="HomeMember.html">
+            
+                    
+                    家庭成员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Room.html">
+            
+                <a href="Room.html">
+            
+                    
+                    家庭房间管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Activator_wifi.html">
+            
+                <a href="Activator_wifi.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="Activator_wifi.html">
+            
+                <a href="Activator_wifi.html#ez模式配网">
+            
+                    
+                    快连(EZ)模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Activator_wifi.html">
+            
+                <a href="Activator_wifi.html#ap模式配网">
+            
+                    
+                    热点(AP)模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Activator_Zigbee.html">
+            
+                <a href="Activator_Zigbee.html">
+            
+                    
+                    ZigBee网关配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="Activator_ZigbeeSub.html">
+            
+                <a href="Activator_ZigbeeSub.html">
+            
+                    
+                    ZigBee子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Device.html">
+            
+                <a href="Device.html">
+            
+                    
+                    自定义设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Device_standard.html">
+            
+                <a href="Device_standard.html">
+            
+                    
+                    标准设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="Device_standard.html">
+            
+                <a href="Device_standard.html#设备功能集">
+            
+                    
+                    标准设备功能集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="Device_standard.html">
+            
+                <a href="Device_standard.html#设备操作控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Device.html">
+            
+                <a href="Device.html">
+            
+                    
+                    自定义设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="Device.html">
+            
+                <a href="Device.html#设备功能点">
+            
+                    
+                    设备功能点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="Device.html">
+            
+                <a href="Device.html#设备控制">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#设备重命名">
+            
+                    
+                    修改设备名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#移除设备">
+            
+                    
+                    移除设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#查询wifi信号强度">
+            
+                    
+                    查询WiFi信号强度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="Device_modify.html">
+            
+                <a href="Device_modify.html#devicebean数据模型">
+            
+                    
+                    DeviceBean数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="OTA.html">
+            
+                <a href="OTA.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="Gateway.html">
+            
+                <a href="Gateway.html">
+            
+                    
+                    网关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Shared.html">
+            
+                <a href="Shared.html">
+            
+                    
+                    共享设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Shared_Device_add.html">
+            
+                <a href="Shared_Device_add.html">
+            
+                    
+                    添加共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="Shared_Device_Remove.html">
+            
+                <a href="Shared_Device_Remove.html">
+            
+                    
+                    移除分享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Shared_Device_Rename.html">
+            
+                <a href="Shared_Device_Rename.html">
+            
+                    
+                    修改备注名
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Timer.html">
+            
+                <a href="Timer.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Group.html">
+            
+                <a href="Group.html">
+            
+                    
+                    群组管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="Group_wifi.html">
+            
+                <a href="Group_wifi.html">
+            
+                    
+                    Wifi群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="Group_zigbee.html">
+            
+                <a href="Group_zigbee.html">
+            
+                    
+                    Zigbee群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="Group_control.html">
+            
+                <a href="Group_control.html">
+            
+                    
+                    群组控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="SmartScene_Manager.html">
+            
+                <a href="SmartScene_Manager.html">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="SmartScene_Manager.html">
+            
+                <a href="SmartScene_Manager.html#智能">
+            
+                    
+                    智能场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="SmartScene_Manager.html">
+            
+                <a href="SmartScene_Manager.html#单个场景操作">
+            
+                    
+                    单个场景操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Device_Data_Channel.html">
+            
+                <a href="Device_Data_Channel.html">
+            
+                    
+                    设备数据流通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Message.html">
+            
+                <a href="Message.html">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="Message.html">
+            
+                <a href="Message.html">
+            
+                    
+                    消息列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="MessagePush.html">
+            
+                <a href="MessagePush.html">
+            
+                    
+                    消息推送设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Feedback.html">
+            
+                <a href="Feedback.html">
+            
+                    
+                    意见反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="CommonInterface.html">
+            
+                <a href="CommonInterface.html">
+            
+                    
+                    通用接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Push.html">
+            
+                <a href="Push.html">
+            
+                    
+                    集成Push
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="Push_umeng.html">
+            
+                <a href="Push_umeng.html">
+            
+                    
+                    友盟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="Push_fcm.html">
+            
+                <a href="Push_fcm.html">
+            
+                    
+                    Firebase Cloud Messaging (FCM)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Gateway.html">
+            
+                <a href="Gateway.html">
+            
+                    
+                    网关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Mesh.html">
+            
+                <a href="Mesh.html">
+            
+                    
+                    蓝牙Mesh(涂鸦)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="Mesh_Prepare.html">
+            
+                <a href="Mesh_Prepare.html">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="Mesh_IDEA.html">
+            
+                <a href="Mesh_IDEA.html">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="Mesh_Admin.html">
+            
+                <a href="Mesh_Admin.html">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19.4" data-path="Mesh_Config.html">
+            
+                <a href="Mesh_Config.html">
+            
+                    
+                    配网与入网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="Mesh_Device.html">
+            
+                <a href="Mesh_Device.html">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="Mesh_Group_Operate.html">
+            
+                <a href="Mesh_Group_Operate.html">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="Mesh_Device_Operate.html">
+            
+                <a href="Mesh_Device_Operate.html">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8" data-path="Mesh_OTA.html">
+            
+                <a href="Mesh_OTA.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Mesh.html">
+            
+                <a href="Mesh.html">
+            
+                    
+                    蓝牙Mesh(SIG)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="SigMesh_Prepare.html">
+            
+                <a href="SigMesh_Prepare.html">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="SigMesh_IDEA.html">
+            
+                <a href="SigMesh_IDEA.html">
+            
+                    
+                    部分基础概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="SigMesh_Admin.html">
+            
+                <a href="SigMesh_Admin.html">
+            
+                    
+                    管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="SigMesh_Config.html">
+            
+                <a href="SigMesh_Config.html">
+            
+                    
+                    配网与入网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.5" data-path="SigMesh_Device.html">
+            
+                <a href="SigMesh_Device.html">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.6" data-path="SigMesh_Group_Operate.html">
+            
+                <a href="SigMesh_Group_Operate.html">
+            
+                    
+                    群组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.7" data-path="SigMesh_Device_Operate.html">
+            
+                <a href="SigMesh_Device_Operate.html">
+            
+                    
+                    控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.8" data-path="SigMesh_OTA.html">
+            
+                <a href="SigMesh_OTA.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Update_Log.html">
+            
+                <a href="Update_Log.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >配网与入网</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x914D;&#x7F51;&#x4E0E;&#x5165;&#x7F51;"><a name="&#x914D;&#x7F51;&#x4E0E;&#x5165;&#x7F51;" class="plugin-anchor" href="#&#x914D;&#x7F51;&#x4E0E;&#x5165;&#x7F51;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F51;&#x4E0E;&#x5165;&#x7F51;</h2>
+<h3 id="&#x626B;&#x63CF;&#x5F85;&#x914D;&#x7F51;&#x5B50;&#x8BBE;&#x5907;"><a name="&#x626B;&#x63CF;&#x5F85;&#x914D;&#x7F51;&#x5B50;&#x8BBE;&#x5907;" class="plugin-anchor" href="#&#x626B;&#x63CF;&#x5F85;&#x914D;&#x7F51;&#x5B50;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x626B;&#x63CF;&#x5F85;&#x914D;&#x7F51;&#x5B50;&#x8BBE;&#x5907;</h3>
+<h5 id="&#x3010;&#x63CF;&#x8FF0;&#x3011;"><a name="&#x3010;&#x63CF;&#x8FF0;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x63CF;&#x8FF0;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x63CF;&#x8FF0;&#x3011;</h5>
+<p>&#x626B;&#x63CF;&#x524D;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x84DD;&#x7259;&#x548C;&#x4F4D;&#x7F6E;&#x6743;&#x9650;</p>
+<h5 id="&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;"><a name="&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;</h5>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x5F00;&#x542F;&#x626B;&#x63CF;</span>
+mMeshSearch<span class="token punctuation">.</span><span class="token function">startSearch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//&#x505C;&#x6B62;&#x626B;&#x63CF;</span>
+mMeshSearch<span class="token punctuation">.</span><span class="token function">stopSearch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><a name="&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;</h5>
+<pre class="language-"><code class="lang-java">ITuyaBlueMeshSearchListener iTuyaBlueMeshSearchListener<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ITuyaBlueMeshSearchListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSearched</span><span class="token punctuation">(</span>SearchDeviceBean deviceBean<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSearchFinish</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+SearchBuilder searchBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SearchBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setMeshName</span><span class="token punctuation">(</span><span class="token string">&quot;out_of_mesh&quot;</span><span class="token punctuation">)</span>        <span class="token comment">//&#x8981;&#x626B;&#x63CF;&#x8BBE;&#x5907;&#x7684;&#x540D;&#x79F0;&#xFF08;&#x9ED8;&#x8BA4;&#x4F1A;&#x662F;out_of_mesh&#xFF0C;&#x8BBE;&#x5907;&#x5904;&#x4E8E;&#x914D;&#x7F51;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x540D;&#x79F0;&#xFF09;</span>
+                <span class="token punctuation">.</span><span class="token function">setTimeOut</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>        <span class="token comment">//&#x626B;&#x63CF;&#x65F6;&#x957F; &#x5355;&#x4F4D;&#x79D2;</span>
+                <span class="token punctuation">.</span><span class="token function">setTuyaBlueMeshSearchListener</span><span class="token punctuation">(</span>iTuyaBlueMeshSearchListener<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ITuyaBlueMeshSearch mMeshSearch <span class="token operator">=</span> TuyaHomeSdk<span class="token punctuation">.</span><span class="token function">getTuyaBlueMeshConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">newTuyaBlueMeshSearch</span><span class="token punctuation">(</span>searchBuilder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x5F00;&#x542F;&#x626B;&#x63CF;</span>
+mMeshSearch<span class="token punctuation">.</span><span class="token function">startSearch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x505C;&#x6B62;&#x626B;&#x63CF;</span>
+mMeshSearch<span class="token punctuation">.</span><span class="token function">stopSearch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;"><a name="&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;" class="plugin-anchor" href="#&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;</h3>
+<h5 id="&#x3010;&#x63CF;&#x8FF0;&#x3011;"><a name="&#x3010;&#x63CF;&#x8FF0;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x63CF;&#x8FF0;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x63CF;&#x8FF0;&#x3011;</h5>
+<p>&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;&#x5206;&#x4E3A;2&#x79CD;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x666E;&#x901A;&#x8BBE;&#x5907;&#x5165;&#x7F51;&#xFF0C;&#x4E00;&#x79CD;&#x662F;mesh&#x7F51;&#x5173;&#x5165;&#x7F51;</p>
+<h5 id="&#x3010;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x3011;"><a name="&#x3010;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x521D;&#x59CB;&#x5316;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x3011;</h5>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x666E;&#x901A;&#x8BBE;&#x5907;&#x5165;&#x7F51;&#x53C2;&#x6570;&#x914D;&#x7F6E;</span>
+TuyaBlueMeshActivatorBuilder tuyaBlueMeshActivatorBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TuyaBlueMeshActivatorBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setSearchDeviceBeans</span><span class="token punctuation">(</span>mSearchDeviceBeanList<span class="token punctuation">)</span>
+            <span class="token comment">//&#x9ED8;&#x8BA4;&#x7248;&#x672C;&#x53F7;</span>
+            <span class="token punctuation">.</span><span class="token function">setVersion</span><span class="token punctuation">(</span><span class="token string">&quot;1.0&quot;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setBlueMeshBean</span><span class="token punctuation">(</span>mMeshBean<span class="token punctuation">)</span>
+            <span class="token comment">//&#x8D85;&#x65F6;&#x65F6;&#x95F4;</span>
+            <span class="token punctuation">.</span><span class="token function">setTimeOut</span><span class="token punctuation">(</span>CONFIG_TIME_OUT<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setTuyaBlueMeshActivatorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//mesh&#x7F51;&#x5173;&#x5165;&#x7F51;&#x53C2;&#x6570;&#x914D;&#x7F6E;   </span>
+TuyaBlueMeshActivatorBuilder tuyaBlueMeshActivatorBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TuyaBlueMeshActivatorBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setWifiSsid</span><span class="token punctuation">(</span>mSsid<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setWifiPassword</span><span class="token punctuation">(</span>mPassword<span class="token punctuation">)</span>     
+            <span class="token punctuation">.</span><span class="token function">setSearchDeviceBeans</span><span class="token punctuation">(</span>mSearchDeviceBeanList<span class="token punctuation">)</span>
+            <span class="token comment">//&#x9ED8;&#x8BA4;&#x7248;&#x672C;&#x53F7;</span>
+            <span class="token punctuation">.</span><span class="token function">setVersion</span><span class="token punctuation">(</span><span class="token string">&quot;2.2&quot;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setBlueMeshBean</span><span class="token punctuation">(</span>mMeshBean<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setHomeId</span><span class="token punctuation">(</span><span class="token string">&quot;homeId&quot;</span><span class="token punctuation">)</span>
+            <span class="token comment">//&#x8D85;&#x65F6;&#x65F6;&#x95F4;</span>
+              <span class="token punctuation">.</span><span class="token function">setTimeOut</span><span class="token punctuation">(</span>CONFIG_TIME_OUT<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">setTuyaBlueMeshActivatorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#x3011;"><a name="&#x3010;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#x3011;</h5>
+<h6 id="&#x3010;&#x5165;&#x53C2;&#x3011;"><a name="&#x3010;&#x5165;&#x53C2;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x5165;&#x53C2;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x5165;&#x53C2;&#x3011;</h6>
+<pre class="language-"><code class="lang-java"><span class="token operator">*</span> <span class="token annotation punctuation">@param</span> mSearchDeviceBeans     &#x5F85;&#x914D;&#x7F51;&#x7684;&#x8BBE;&#x5907;&#x96C6;&#x5408;
+<span class="token operator">*</span> <span class="token annotation punctuation">@param</span> timeout    &#x914D;&#x7F51;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x8BBE;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<span class="token number">100</span>s<span class="token punctuation">.</span>
+<span class="token operator">*</span> <span class="token annotation punctuation">@param</span> ssid       &#x914D;&#x7F51;&#x4E4B;&#x540E;&#xFF0C;&#x8BBE;&#x5907;&#x5DE5;&#x4F5C;WiFi&#x7684;&#x540D;&#x79F0;&#x3002;&#xFF08;&#x5BB6;&#x5EAD;&#x7F51;&#x7EDC;&#xFF09;
+<span class="token operator">*</span> <span class="token annotation punctuation">@param</span> password   &#x914D;&#x7F51;&#x4E4B;&#x540E;&#xFF0C;&#x8BBE;&#x5907;&#x5DE5;&#x4F5C;WiFi&#x7684;&#x5BC6;&#x7801;&#x3002;&#xFF08;&#x5BB6;&#x5EAD;&#x7F51;&#x7EDC;<span class="token punctuation">)</span>
+<span class="token operator">*</span> <span class="token annotation punctuation">@param</span> mMeshBean  MeshBean 
+<span class="token operator">*</span> <span class="token annotation punctuation">@param</span> homeId     &#x8BBE;&#x5907;&#x8981;&#x52A0;&#x5165;&#x7684;Mesh&#x7F51; &#x6240;&#x5C5E;&#x5BB6;&#x5EAD;&#x7684;HomeId
+<span class="token operator">*</span> <span class="token annotation punctuation">@param</span> version    &#x666E;&#x901A;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x662F;<span class="token number">1.0</span>    &#x7F51;&#x5173;&#x914D;&#x7F51;&#x662F;<span class="token number">2.2</span>
+</code></pre>
+<h6 id="&#x3010;&#x51FA;&#x53C2;&#x3011;"><a name="&#x3010;&#x51FA;&#x53C2;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x51FA;&#x53C2;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x51FA;&#x53C2;&#x3011;</h6>
+<p>ITuyaBlueMeshActivatorListener listener &#x914D;&#x7F51;&#x56DE;&#x8C03;&#x63A5;&#x53E3;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x5355;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x5931;&#x8D25;&#x56DE;&#x8C03;</span>
+<span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span>String errorCode<span class="token punctuation">,</span> String errorMsg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@param</span> errorCode<span class="token operator">:</span>
+<span class="token number">13007</span>       &#x767B;&#x5F55;&#x8BBE;&#x5907;&#x5931;&#x8D25;
+<span class="token number">13004</span>       &#x91CD;&#x7F6E;&#x8BBE;&#x5907;&#x5730;&#x5740;&#x5931;&#x8D25;
+<span class="token number">13005</span>       &#x8BBE;&#x5907;&#x5730;&#x5740;&#x5DF2;&#x6EE1;
+<span class="token number">13007</span>       ssid&#x4E3A;&#x7A7A;
+<span class="token number">13011</span>       &#x914D;&#x7F51;&#x8D85;&#x65F6;
+
+<span class="token comment">//&#x5355;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x6210;&#x529F;&#x56DE;&#x8C03;</span>
+<span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span>DeviceBean deviceBean<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x6574;&#x4E2A;&#x914D;&#x7F51;&#x7ED3;&#x675F;&#x56DE;&#x8C03;</span>
+<span class="token keyword">void</span> <span class="token function">onFinish</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;"><a name="&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x3011;</h5>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x5F00;&#x542F;&#x914D;&#x7F51;</span>
+iTuyaBlueMeshActivator<span class="token punctuation">.</span><span class="token function">startActivator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x505C;&#x6B62;&#x914D;&#x7F51;</span>
+iTuyaBlueMeshActivator<span class="token punctuation">.</span><span class="token function">stopActivator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h5 id="&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><a name="&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;" class="plugin-anchor" href="#&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x3010;&#x4EE3;&#x7801;&#x8303;&#x4F8B;&#x3011;</h5>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x666E;&#x901A;&#x8BBE;&#x5907;&#x5165;&#x7F51;</span>
+TuyaBlueMeshActivatorBuilder tuyaBlueMeshActivatorBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TuyaBlueMeshActivatorBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setSearchDeviceBeans</span><span class="token punctuation">(</span>foundDevices<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setVersion</span><span class="token punctuation">(</span><span class="token string">&quot;1.0&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setBlueMeshBean</span><span class="token punctuation">(</span>mMeshBean<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setTimeOut</span><span class="token punctuation">(</span>timeOut<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setTuyaBlueMeshActivatorListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaBlueMeshActivatorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span>DeviceBean deviceBean<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        L<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>TAG<span class="token punctuation">,</span> <span class="token string">&quot;subDevBean onSuccess: &quot;</span> <span class="token operator">+</span> deviceBean<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span>String errorCode<span class="token punctuation">,</span> String errorMsg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        L<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>TAG<span class="token punctuation">,</span> <span class="token string">&quot;config mesh error&quot;</span> <span class="token operator">+</span> errorCode <span class="token operator">+</span> <span class="token string">&quot; &quot;</span> <span class="token operator">+</span> errorMsg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFinish</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        L<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>TAG<span class="token punctuation">,</span> <span class="token string">&quot;config mesh onFinish&#xFF1A; &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ITuyaBlueMeshActivator iTuyaBlueMeshActivator <span class="token operator">=</span> TuyaHomeSdk<span class="token punctuation">.</span><span class="token function">getTuyaBlueMeshConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">newActivator</span><span class="token punctuation">(</span>tuyaBlueMeshActivatorBuilder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+iTuyaBlueMeshActivator<span class="token punctuation">.</span><span class="token function">startActivator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">//&#x7F51;&#x5173;&#x5165;&#x7F51;</span>
+TuyaBlueMeshActivatorBuilder tuyaBlueMeshActivatorBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TuyaBlueMeshActivatorBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setWifiSsid</span><span class="token punctuation">(</span>mSsid<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setWifiPassword</span><span class="token punctuation">(</span>mPassword<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setSearchDeviceBeans</span><span class="token punctuation">(</span>foundDevices<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setVersion</span><span class="token punctuation">(</span><span class="token string">&quot;2.2&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setBlueMeshBean</span><span class="token punctuation">(</span>mMeshBean<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setHomeId</span><span class="token punctuation">(</span><span class="token string">&quot;homeId&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setTuyaBlueMeshActivatorListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaBlueMeshActivatorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span>DeviceBean devBean<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">//&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x6210;&#x529F;&#x56DE;&#x8C03;</span>
+                        L<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>TAG<span class="token punctuation">,</span> <span class="token string">&quot;startConfig  success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span>String errorCode<span class="token punctuation">,</span> String errorMsg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">//&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x5931;&#x8D25;&#x56DE;&#x8C03;</span>
+                        L<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>TAG<span class="token punctuation">,</span> <span class="token string">&quot;errorCode: &quot;</span> <span class="token operator">+</span> errorCode <span class="token operator">+</span> <span class="token string">&quot; errorMsg: &quot;</span> <span class="token operator">+</span> errorMsg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFinish</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">//&#x6240;&#x6709;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x7ED3;&#x675F;&#x56DE;&#x8C03;</span>
+                        L<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span>TAG<span class="token punctuation">,</span> <span class="token string">&quot;subDevBean onFinish: &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ITuyaBlueMeshActivator iTuyaBlueMeshActivator <span class="token operator">=</span> TuyaHomeSdk<span class="token punctuation">.</span><span class="token function">getTuyaBlueMeshConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">newWifiActivator</span><span class="token punctuation">(</span>tuyaBlueMeshActivatorBuilder<span class="token punctuation">)</span><span class="token punctuation">;</span>
+iTuyaBlueMeshActivator<span class="token punctuation">.</span><span class="token function">startActivator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Mesh_Admin.html" class="navigation navigation-prev " aria-label="Previous page: 管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Mesh_Device.html" class="navigation navigation-next " aria-label="Next page: 设备">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"配网与入网","level":"1.19.4","depth":2,"next":{"title":"设备","level":"1.19.5","depth":2,"path":"resource/Mesh_Device.md","ref":"./resource/Mesh_Device.md","articles":[]},"previous":{"title":"管理","level":"1.19.3","depth":2,"path":"resource/Mesh_Admin.md","ref":"./resource/Mesh_Admin.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/Mesh_Config.md","mtime":"2019-09-06T11:37:27.291Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-24T06:57:54.122Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
