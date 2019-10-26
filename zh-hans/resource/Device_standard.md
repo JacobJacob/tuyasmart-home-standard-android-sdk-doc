@@ -88,7 +88,7 @@ TuyaHomeDevice提供设备相关信息（dp数据、设备名称、设备在线�
 ##### 【实现回调】
 
 ```java
-mDevice.registerDeviceListener(new IDevListener() {
+mDevice.registerDeviceListener(new IDeviceListener() {
     @Override
     public void onDpUpdate(String devId, String dpStr) {
     //dp数据更新:devId 和相应dp数据
