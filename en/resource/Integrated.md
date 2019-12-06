@@ -18,9 +18,9 @@ defaultConfig {
    }
     dependencies {
         implementation 'com.alibaba:fastjson:1.1.67.android'
-        implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.6.0'
+        implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
         implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0'
-        implementation 'com.tuya.smart:tuyasmart-standard:3.12.0-alpha1'
+        implementation 'com.tuya.smart:tuyasmart:3.13.0-bata1'
     }
     
 repositories {

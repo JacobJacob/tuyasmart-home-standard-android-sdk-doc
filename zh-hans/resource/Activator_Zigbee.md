@@ -5,6 +5,8 @@
 这里的ZigBee网关配网是指有线配网,不用输入路由器的热点名称和密码。
 ZigBee网关配网前，请确保ZigBee网关设备连接上外网联通的路由器，并使ZigBee网关设备处于配网状态
 
+无线网关请使用WiFi配网方式
+
 ```sequence
 Title: Zigbee 网关配网
 

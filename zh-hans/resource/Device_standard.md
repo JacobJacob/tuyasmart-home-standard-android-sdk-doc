@@ -88,7 +88,7 @@ TuyaHomeDevice提供设备相关信息（dp数据、设备名称、设备在线�
 ##### 【实现回调】
 
 ```java
-mDevice.registerDeviceListener(new IDeviceListener() {
+mDevice.registerDeviceListener(new IDevListener() {
     @Override
     public void onDpUpdate(String devId, String dpStr) {
     //dp数据更新:devId 和相应dp数据
@@ -195,7 +195,7 @@ mDevice.onDestroy();
 ##### 【注意事项】
 
 - 指令下发成功并不是指设备真正操作成功，只是意味着指令成功发送出去。操作成功会有dp数据信息上报上来 ，且通过`IDevListener onDpUpdate`接口返回。
-- command 是以`Map<String dpCode,Object dpValue>` 数据格式。
+- command 是以```Map<String dpCode,Object dpValue>``` 数据格式。
 - command 命令可以一次发送多个dp数据。
 
 #### 设备信息查询

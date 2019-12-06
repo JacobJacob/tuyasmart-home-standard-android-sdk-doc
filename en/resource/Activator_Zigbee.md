@@ -40,6 +40,8 @@ Before the wifi network configuration, the SDK needs to obtain the network confi
 The term of validity of Token is 5 minutes, and the Token become invalid once the network configuration succeeds.
 A new Token has to be obtained if you have to reconfigure network.
 
+Wireless gateway, please use Wifi Network Configuration
+
 ```java
 /**
 * @param homeId(Reference family management section)

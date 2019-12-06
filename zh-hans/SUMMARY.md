@@ -35,7 +35,7 @@
 * 设备控制
   
     * [标准设备控制](./resource/Device_standard.md)
-        * [标准设备功能集](./resource/Device_standard.md#设备功能集)
+        * [标准设备功能集](./resource/Device_standard.md#标准设备功能集)
         * [设备控制](./resource/Device_standard.md#设备操作控制)
     * [自定义设备控制](./resource/Device.md)
         * [设备功能点](./resource/Device.md#设备功能点)

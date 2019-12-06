@@ -105,3 +105,21 @@ TuyaHomeSdk.getUserInstance().loginOrRegisterWithUid("86", "1234", "123456", new
     }
 });
 ```
+
+## （5）User uid login registration interface
+
+The user uid logs in to the registration interface. 
+
+If you are not registered, this interface will register your uid, if you have already registered, it will  log in directly.
+
+```java
+     /**
+      *
+      * @param countryCode country code
+      * @param uid uid
+      * @param passwd password
+      * @param isCreateHome Whether to create a family by default
+      * @param callback callback
+      */
+ TuyaHomeSdk.getUserInstance().loginOrRegisterWithUid(String countryCode, String uid, String passwd, boolean isCreateHome, IUidLoginCallback callback);
+```

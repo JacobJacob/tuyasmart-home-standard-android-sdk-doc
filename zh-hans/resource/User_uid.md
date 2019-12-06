@@ -97,3 +97,20 @@ TuyaHomeSdk.getUserInstance().loginOrRegisterWithUid("86", "1234", "123456", new
     }
 });
 ```
+
+## 五、用户uid登录注册接口
+
+用户uid登录注册接口。如果未注册就注册，如果已经注册了就直接登录。
+
+```java
+    /**
+     * 
+     * @param countryCode 国家码
+     * @param uid uid
+     * @param passwd 密码
+     * @param isCreateHome  是否默认创建家庭
+     * @param callback 回调
+     */
+TuyaHomeSdk.getUserInstance().loginOrRegisterWithUid(String countryCode, String uid, String passwd, boolean isCreateHome, IUidLoginCallback callback);
+```
+
