@@ -100,7 +100,11 @@
   * [群组](./resource/SigMesh_Group_Operate.md)
   * [控制](./resource/SigMesh_Device_Operate.md)
   * [固件升级](./resource/SigMesh_OTA.md)	
-  
+* [蓝牙](./resource/BLE.md)
+  * [准备](./resource/BLE_Prepare.md) 
+  * [扫描与配网激活](./resource/BLE_Prepare.md) 
+  * [蓝牙设备操作](./resource/BLE_Operator.md) 
+  * [固件升级](./resource/BLE_OTA.md) 
 * [错误码](./resource/ErrorCode.md)
 
 * [常见问题](./resource/FAQ.md)
